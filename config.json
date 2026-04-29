@@ -1,0 +1,12 @@
+{
+  "default": {
+    "max_requests": 10,
+    "window_seconds": 60,
+    "algorithm": "sliding_window"
+  },
+  "clients": {
+    "client_A": { "max_requests": 5,  "window_seconds": 30,  "algorithm": "fixed_window" },
+    "client_B": { "max_requests": 20, "window_seconds": 60,  "algorithm": "sliding_window" },
+    "client_C": { "max_requests": 3,  "window_seconds": 10,  "algorithm": "fixed_window" }
+  }
+}
